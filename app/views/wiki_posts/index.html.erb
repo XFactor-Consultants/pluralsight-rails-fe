@@ -1,0 +1,24 @@
+<h1>Wiki Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Author</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @wiki_posts.each do |post| %>
+      <tr>
+        <td><%= post['title'] %></td>
+        <td><%= post['description'] %></td>
+        <td><%= post['author'] %></td>
+        <td><%= post['created_at'] %></td>
+        <td><%= post['updated_at'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
